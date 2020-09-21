@@ -1,0 +1,14 @@
+# Packages
+node_modules/
+
+# Generierte Dateien
+src/**/*.js
+src/**/*.map
+db/**/*.js
+db/**/*.map
+src/public/css/style.css
+# Inkludiere die .js-Dateien in public
+!src/public/**/*.js
+
+# Mac only
+.DS_Store

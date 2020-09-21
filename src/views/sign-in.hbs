@@ -1,0 +1,17 @@
+{{#if error.invalidCredentials}}
+<div class="alert alert-danger" role="alert">
+  Anmeldung fehlgeschlagen!
+</div>
+{{/if}}
+<h1>Anmelden</h1>
+<form action="/users/sign-in" method="post">
+  <div class="form-group">
+    <label for="email" class="control-label">E-Mail</label>
+    <input type="email" class="form-control" id="email" name="email" autofocus="autofocus">
+  </div>
+  <div class="form-group">
+    <label for="password" class="control-label">Passwort</label>
+    <input type="password" class="form-control" id="password" name="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Anmelden</button>
+</form>

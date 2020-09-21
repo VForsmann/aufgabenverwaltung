@@ -1,0 +1,50 @@
+$fa-font-path: "~font-awesome/fonts";
+$theme-colors: (
+  primary: #034DA1
+);
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  padding-top: 2.5rem;
+}
+
+main {
+  margin-top: 2.5rem;
+}
+
+.task .remove-task {
+  display: none;
+}
+
+.task:hover .remove-task {
+  display: inline;
+  color: #800000;
+}
+
+.task[data-task-status="open"] .checked {
+  display: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.task .checked {
+  color: #008000;
+}
+
+.task-title {
+  margin-left: 0.75rem;
+}
+
+.toggle-task {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid #888;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
